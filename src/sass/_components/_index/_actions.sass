@@ -1,0 +1,149 @@
+.actions
+  position: relative
+  &__bg
+    background-color: $white2
+    width: 100%
+    height: 469px
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 0
+  &__wrapper
+    width: 60.5%
+    position: relative
+    margin: 0 auto
+    z-index: 1
+    opacity: .999
+  &__icon
+    display: inline-block
+    width: 38px
+    height: 38px
+    background-image: linear-gradient(to top, #ffa800 0%, #ffbd09 100%)
+    border-radius: 50%
+    position: absolute
+    cursor: pointer
+    border: 3px solid $white
+    z-index: 2
+    opacity: 1
+    &--item1
+      top: 167px
+      left: 18px
+    &--item2
+      top: 319px
+      left: -17px
+    &--item3
+      bottom: 148px
+      left: 15px
+    &--item4
+      top: 167px
+      right: 18px
+    &--item5
+      top: 319px
+      right: -17px
+    &--item6
+      bottom: 148px
+      right: 15px
+    &--item7
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+    &:before
+      content: ""
+      width: 32px
+      height: 32px
+      background: $white
+      border-radius: 50%
+      position: absolute
+      top: 3px
+      left: 3px
+      z-index: 2
+    &:after
+      content: ""
+      width: 46px
+      height: 46px
+      background-image: linear-gradient(to top, #ffa800 0%, #ffbd09 100%)
+      border-radius: 50%
+      opacity: .11
+      position: absolute
+      top: -4px
+      left: -4px
+      transition: .7s ease-in-out
+      z-index: 2
+    &:hover
+      &:after
+        background-image: linear-gradient(to top, #ff4200 0%, #ff8e09 100%)
+        opacity: 0.15
+        transition: .7s ease-in-out
+
+.cross
+  width: 15px
+  height: 15px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  z-index: 2
+  &__horzl
+    width: 15px
+    height: 4px
+    background-image: linear-gradient(to top, #ffa800 0%, #ffbd09 100%)
+    position: absolute
+    top: 5.5px
+    left: 0
+  &__verl
+    width: 4px
+    height: 15px
+    background-image: linear-gradient(to top, #ffa800 0%, #ffbd09 100%)
+    position: absolute
+    top: 0
+    left: 5.5px
+
+.tip
+  width: 243px
+  height: auto
+  position: absolute
+  opacity: .999
+  padding: 15px
+  overflow: hidden
+  box-shadow: 0 0 21px rgba(221, 220, 224, 0.44)
+  z-index: 1
+  border-radius: 5px
+  box-sizing: border-box
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    right: -36px
+    transform: translateY(-50%)
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    box-shadow: 0px 0px 0px 9999px #fff
+    z-index: -1
+  &:after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    box-shadow: inset 0px -300px 243px -300px inherit
+  &__title
+    font-family: $museoMid
+    font-size: 18px
+    color: $dark
+  &--item1
+    top: 114px
+    left: -217px
+  &--item2
+    top: 266px
+    left: -252px
+  &--item3
+    bottom: 95px
+    left: -220px
+  &__text
+    font-family: $museo
+    font-size: 14px
+    line-height: 21px
+    margin-top: 15px

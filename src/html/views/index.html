@@ -1,24 +1,15 @@
 <% var data = {
-  title: "Webpack Start Template v.1",
-  author: "Emic"
+  title: "Муравьинные фермы"
 }; %>
 
+<!-- header -->
 <%= _.template(require('./../includes/header.html').default)(data) %>
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="text_wrapper">
-          <h1>Первая страница</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repudiandae minus dolore blanditiis
-            aliquam sint dicta fuga illo debitis cumque, unde, consequatur quo quia perferendis atque iure maiores in
-            tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum mollitia neque eum! Mollitia voluptates error aliquid, rerum iste maxime quos. Dolorem facilis dignissimos officiis velit voluptate totam eligendi, doloribus aliquam.</p>
-        </div>
-        <a href="img/s375.webp" class="fancybox" data-fancybox>
-          Клац!
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- front section -->
+<%= _.template(require('./../includes/front-section.html').default)(data) %>
+<!-- why section -->
+<%= _.template(require('./../includes/why.html').default)(data) %>
+<!-- actions section -->
+<%= _.template(require('./../includes/actions.html').default)(data) %>
+
+<!-- footer -->
 <%= _.template(require('./../includes/footer.html').default)(data) %>

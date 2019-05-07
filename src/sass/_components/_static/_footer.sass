@@ -1,11 +1,20 @@
-footer
+.footer
   width: 100%
-  height: 80px
-  background: #abaaa7
-  // position: sticky
-  bottom: 0 
-  h3
-    color: $textDefault
-    font-size: 40px
-    text-align: center
-    padding-top: 20px
+  height: 98px
+  background: $white
+  padding-top: 23px
+  box-sizing: border-box
+  &__social
+    display: inline-block
+    margin-left: 35px
+    transform: translateY(12px)
+  &__info
+    display: inline-block
+    font-family: $museo
+    font-size: 1.6em
+    color: $grey4
+    margin-left: 48px
+  &__link
+    color: #2355e2
+    &:hover
+      text-decoration: underline

@@ -1,28 +1,59 @@
-header
+.header
   width: 100%
-  height: 80px
-  background: #abaaa7
+  height: 98px
+  background: $white
   position: relative
-  h1
-    font-size: 40px
-    color: white
-    text-align: center
-    text-transform: uppercase
+  padding-top: 24px
+  box-sizing: border-box
+  &__phone
+    color: $black2
+    font-family: $museoMid
+    font-size: 2.5em
+nav
+  width: 62.6%
+  display: inline-block
+  margin-left: 48px
+  margin-top: 16px
+
+.menu
+  width: 100%
+  &__item
+    display: inline
+    font-size: 1.6em
+    +respond-to(1070)
+      font-size: .8rem
+  &__link
+    display: inline-block
+    font-family: $museo
+    color: $grey4
+    transition: .5s ease-in-out
+    &:hover
+      color: $green
+      text-shadow: 0 0 .9px $green, 0 0 .9px $green
+      padding: 0
+      transition: .5s ease-in-out
 
 .logo
-  width: 100px
-  height: auto
   display: inline-block
-  padding-top: 20px
-  img
-    width: 100%
+  float: left
 
-.text 
+.phone-block
+  width: 17%
   display: inline-block
-  position: absolute
-  top: 25px 
-  left: 50%
-  transform: translateX(-50%)
-  strong
-    text-transform: uppercase
-    font-size: 24px
+  float: right
+  margin-top: 4px
+  &__text
+    display: inline-block
+    font-family: $museo
+    font-size: 16px
+    color: $grey4
+    position: relative
+    &:before
+      content: ""
+      width: 34px
+      height: 34px
+      background: url(../img/h_phone_icon.png) no-repeat center center
+      position: absolute
+      top: -23px
+      left: -42px
+

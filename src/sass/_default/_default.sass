@@ -11,13 +11,147 @@ html, body
   height: 100%
 
 body
-  font-size: 16px
+  font-size: 10px
   position: relative
   line-height: 1.2
-  font-family: $reg
-  background: $body
-  overflow-x: hidden
+  font-family: $museo
+  background: $white
+  color: $grey4
   opacity: 1
   -webkit-font-smoothing: antialiased
   -webkit-appearance: none
+  +respond-to(1168)
+    font-size: 8px
+
+.main-wrapper
+  width: 100%
+  overflow: hidden
+
+.clear
+  clear: both
+
+.container
+  max-width: 1200px
+  width: 100%
+  padding: 0 40px
+  box-sizing: border-box
+  margin: 0 auto
+  position: relative
+
+.row
+  display: flex
+  flex-wrap: wrap
+
+.section
+  width: 100%
+  position: relative
+  box-sizing: border-box
+
+.space-between
+  justify-content: space-between
+
+.space-around
+  justify-content: space-around
+
+h1
+  color: $black2
+  font-family: $museoBold
+  font-size: 3.6em
+
+h2
+  color: $green
+  font-family: $museoBold
+  font-size: 3.2em
+
+h3
+  color: $green
+  font-family: $museoBold
+  font-size: 25px
+
+ul
+  list-style-type: none
+
+a
+  text-decoration: none
+  
+.text-center
+  text-align: center
+  
+.text-left
+  text-align: left
+
+.epsilon
+  font-family: $epsilon
+
+.btn
+  display: inline-block
+  width: 250px
+  height: 60px
+  box-shadow: inset 0 -3px 0 rgba(22, 22, 22, 0.17)
+  border-radius: 5px
+  background-color: $blue
+  font-family: $museoMid
+  font-size: 18px
+  color: $white
+  background-image: linear-gradient(-202deg, #ffad09 0%, #ff8609 100%)
+  transition: .5s ease-in-out
+  border: none
+  cursor: pointer
+  &:hover
+    transition: .5s ease-in-out
+    background-image: linear-gradient(-202deg, #ff8609 0%, #ffad09 100%)
+
+.text
+  font-size: 1.6rem
+
+.vk
+  display: inline-block
+  width: 34px
+  height: 34px
+  background-image: linear-gradient(to top, #3d598d 0%, #6789b9 100%)
+  border-radius: 50%
+  position: relative
+  margin-left: 18px
+  &:after
+    content: ""
+    width: 50px
+    height: 50px
+    background-image: linear-gradient(to top, #3d598d 0%, #6789b9 100%)
+    opacity: 0
+    position: absolute
+    top: -8px
+    left: -8px
+    border-radius: 50%
+    transition: .7s ease-in-out
+    z-index: 0
+  &:hover
+    &:after
+      opacity: .22
+      transition: .7s ease-in-out
+  i
+    font-size: 19px
+    color: $white
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: 1
+    opacity: .999
+
+.insta
+  @extend .vk
+  background-image: linear-gradient(45deg, #9c35a5 0%, #c53087 50%, #f87031 100%)
+  position: relative
+  &:after
+    background-image: linear-gradient(45deg, #9c35a5 0%, #c53087 50%, #f87031 100%)
+  i
+    font-size: 19px
+    color: $white
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: 1
+    opacity: .999
+
 

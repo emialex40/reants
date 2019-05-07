@@ -1,3 +1,6 @@
+
+
+<!-- header -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -5,56 +8,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css" />
 
-    <title>Webpack Start Template v.1</title>
+    <title>Муравьинные фермы</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="text">
-              <strong>Webpack start template v.1</strong>
-            </div>
-            <nav></nav>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="container">
+          <a class="logo" href="/">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          <nav>
+            <ul class="menu row space-between">
+              <li class="menu__item"><a class="menu__link" href="#">о фермах</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">каталог</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">преимущества </a></li>
+              <li class="menu__item"><a class="menu__link" href="#">отзывы</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">доставка</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">ответы на вопросы</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="phone-block">
+            <a class="header__phone" href="tel:88002226187">8 800 222 61 87</a>
+            <p class="phone-block__text">звонок бесплатный</p>
+          </div>
+        </div>
+      </header>
+<!-- front section -->
+<section class="section front">
+  <div class="container">
+    <div class="front__wrapper">
+      <div class="front__header">
+        <h1>Муравьиные фермы под ключ<br>
+          с бесплатной доставкой по РФ.</h1>
+        <span>
+          Увлекательный и полезный подарок<br>
+          для детей любого возраста
+        </span>
+        <div class="front__btn">
+          <button class="btn">Подобрать ферму</button>
+          <div class="front__social">
+            <a class="vk" href=""><i class="fab fa-vk"></i></a>
+            <a class="insta" href=""><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
-    </header>
+      <div class="front__img">
+        <img src="img/front_bg.png" alt="Муравьиные фермы под ключ">
+      </div>
+      <img class="front__arr" src="img/front_arrow.png" alt="Подобрать ферму">
+      <div class="clear"></div>
+    </div>
+  </div>
+</section>
+<!-- why section -->
+<section class="section why">
+  <div class="container">
+    <h2 class="text-center">Почему дети и взрослые<br>
+      любят муравьиные фермы</h2>
+    <div class="why__wrapper row space-between">
+      <div class="why__item">
+        <div class="why__icon why__icon--ant"></div>
+        <div class="why__title">
+          Уход за муравьями<br>
+          – прост.
+        </div>
+        <div class="why__text">
+          Муравьи не вызывают аллергии, не шумят и не пахнут,
+          при правильном уходе колония живет до 20 лет!
+        </div>
+      </div>
+      <div class="why__item">
+        <div class="why__icon why__icon--zoom"></div>
+        <div class="why__title">
+          Наблюдать за муравьями –
+          познавательно и интересно!
+        </div>
+        <div class="why__text">
+          Вы знали, что муравьи очень социальные животные с множеством профессий:
+          рабочие, строители, няньки, уборщики, повара, солдаты и охранники.
+          Наблюдайте за муравьями и изучайте их уникальный мир!
+        </div>
+      </div>
+      <div class="why__item">
+        <div class="why__icon why__icon--face"></div>
+        <div class="why__title">
+          Фермы положительно
+          влияют на развитие детей.
+        </div>
+        <div class="why__text">
+          Ферма поможет развить у вашего ребенка внимательность,
+          усидчивость, мелкую моторику и ответственность.
+        </div>
+      </div>
+    </div>
 
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="text_wrapper">
-              <h1>Первая страница</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repudiandae minus dolore blanditiis
-                aliquam sint dicta fuga illo debitis cumque, unde, consequatur quo quia perferendis atque iure maiores
-                in tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum mollitia neque eum!
-                Mollitia voluptates error aliquid, rerum iste maxime quos. Dolorem facilis dignissimos officiis velit
-                voluptate totam eligendi, doloribus aliquam.
-              </p>
-            </div>
-            <a href="img/s375.webp" class="fancybox" data-fancybox>
-              Клац!
-            </a>
-          </div>
+  </div>
+</section>
+<!-- actions section -->
+<section class="section actions">
+  <div class="container">
+    <div class="actions__wrapper">
+      <img src="img/actions_img.png" alt="Почему дети и взрослые любят муравьиные фермы">
+      <div class="actions__icon actions__icon--item1 js-fade" data-numb="1">
+        <div class="cross">
+          <div class="cross__horzl"></div>
+          <div class="cross__verl"></div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h3>
-              Автор: Emic
-            </h3>
-          </div>
+      <div class="tip tip--item1" data-accord="1">
+        <div class="tip__title">Кормим муравьев</div>
+        <div class="tip__text">
+          Насыпьте муравьям несколько зерен и смотрите за тем,
+          как они отнесут их в свое хранилище.
         </div>
       </div>
-    </footer>
+      <div class="actions__icon actions__icon--item2 js-fade" data-numb="2">
+        <div class="cross">
+          <div class="cross__horzl"></div>
+          <div class="cross__verl"></div>
+        </div>
+      </div>
+      <div class="tip tip--item2" data-accord="2">
+        <div class="tip__title">Кормим муравьев</div>
+        <div class="tip__text">
+          Насыпьте муравьям несколько зерен и смотрите за тем,
+          как они отнесут их в свое хранилище.
+        </div>
+      </div>
+      <div class="actions__icon actions__icon--item3 js-fade" data-numb="3">
+        <div class="cross">
+          <div class="cross__horzl"></div>
+          <div class="cross__verl"></div>
+        </div>
+      </div>
+      <div class="tip tip--item3" data-accord="3">
+        <div class="tip__title">Кормим муравьев</div>
+        <div class="tip__text">
+          Насыпьте муравьям несколько зерен и смотрите за тем,
+          как они отнесут их в свое хранилище.
+        </div>
+      </div>
+      <div class="actions__icon actions__icon--item4 js-fade" data-numb="4">
+        <div class="cross">
+          <div class="cross__horzl"></div>
+          <div class="cross__verl"></div>
+        </div>
+      </div>
+      <div class="tip tip--item4" data-accord="4">
+        <div class="tip__title">Кормим муравьев</div>
+        <div class="tip__text">
+          Насыпьте муравьям несколько зерен и смотрите за тем,
+          как они отнесут их в свое хранилище.
+        </div>
+      </div>
+      <div class="actions__icon actions__icon--item5 js-fade" data-numb="5">
+        <div class="cross">
+          <div class="cross__horzl"></div>
+          <div class="cross__verl"></div>
+        </div>
+      </div>
+      <div class="tip tip--item5" data-accord="5">
+        <div class="tip__title">Кормим муравьев</div>
+        <div class="tip__text">
+          Насыпьте муравьям несколько зерен и смотрите за тем,
+          как они отнесут их в свое хранилище.
+        </div>
+      </div>
+      <div class="actions__icon actions__icon--item6 js-fade" data-numb="6">
+        <div class="cross">
+          <div class="cross__horzl"></div>
+          <div class="cross__verl"></div>
+        </div>
+      </div>
+      <div class="tip tip--item6" data-accord="6">
+        <div class="tip__title">Кормим муравьев</div>
+        <div class="tip__text">
+          Насыпьте муравьям несколько зерен и смотрите за тем,
+          как они отнесут их в свое хранилище.
+        </div>
+      </div>
+      <div class="actions__icon actions__icon--item7 js-fade" data-numb="7">
+        <div class="cross">
+          <div class="cross__horzl"></div>
+          <div class="cross__verl"></div>
+        </div>
+      </div>
+      <div class="tip tip--item7" data-accord="7">
+        <div class="tip__title">Кормим муравьев</div>
+        <div class="tip__text">
+          Насыпьте муравьям несколько зерен и смотрите за тем,
+          как они отнесут их в свое хранилище.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="actions__bg"></div>
+</section>
+
+
+<!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <a class="logo" href="/">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          <p class="footer__info">ИП Просвиряков Павел Владимирович ИНН 665802123265 <a class="footer__link" href="#">способы оплаты</a></p>
+          <div class="footer__social">
+            <a class="vk" href=""><i class="fab fa-vk"></i></a>
+            <a class="insta" href=""><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="phone-block">
+            <a class="header__phone" href="tel:88002226187">8 800 222 61 87</a>
+            <p class="phone-block__text">звонок бесплатный</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </footer>
+    </div>
 
     <script src="js/index.js"></script>
   </body>

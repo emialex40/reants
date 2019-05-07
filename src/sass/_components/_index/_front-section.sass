@@ -1,0 +1,47 @@
+.front
+  background-image: url(../../../img/top_bg.png)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  background-color: $white
+  &__wrapper
+    padding-bottom: 63px
+  &__header
+    padding-top: 83px
+    float: left
+    z-index: 1
+    opacity: .999
+    span
+      font-family: $museoMid
+      font-size: 2.2em
+      color: $dark
+      display: block
+      margin-top: 36px
+  &__btn
+    margin-top: 56px
+  &__social
+    display: inline-block
+    transform: translateY(10px)
+  &__img
+    width: 62.5%
+    float: right
+    margin-top: -355px
+    z-index: 0
+    img
+      width: 100%
+      object-fit: cover
+  &__arr
+    position: absolute
+    left: 165px
+    bottom: 120px
+    width: 31.2%
+    height: auto
+    +respond-to(1124)
+      width: 22.2%
+    +respond-to(1041)
+      bottom: 80px
+    img
+      width: 100%
+      object-fit: cover
+
+
