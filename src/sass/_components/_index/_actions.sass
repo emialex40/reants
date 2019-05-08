@@ -1,5 +1,6 @@
 .actions
   position: relative
+  padding-bottom: 115px
   &__bg
     background-color: $white2
     width: 100%
@@ -75,6 +76,34 @@
         background-image: linear-gradient(to top, #ff4200 0%, #ff8e09 100%)
         opacity: 0.15
         transition: .7s ease-in-out
+  &__title
+    position: absolute
+    font-family: $museoBold
+    font-size: 18px
+    color: $dark
+    z-index: 0
+    &--left1
+      top: 6px
+      left: -177px
+    &--left2
+      top: 6px
+      left: -154px
+    &--left3
+      top: 6px
+      left: -177px
+    &--right1
+      top: 6px
+      right: -211px
+    &--right2
+      top: 6px
+      right: -182px
+    &--right3
+      top: 6px
+      right: -188px
+    &--bottom
+      top: 55px
+      left: -92px
+      min-width: 234px
 
 .cross
   width: 15px
@@ -98,37 +127,79 @@
     position: absolute
     top: 0
     left: 5.5px
+    transition: .5s ease
 
 .tip
   width: 243px
   height: auto
   position: absolute
-  opacity: .999
   padding: 15px
   overflow: hidden
   box-shadow: 0 0 21px rgba(221, 220, 224, 0.44)
   z-index: 1
   border-radius: 5px
   box-sizing: border-box
-  &:before
-    content: ""
-    position: absolute
-    top: 50%
-    right: -36px
-    transform: translateY(-50%)
-    width: 50px
-    height: 50px
-    border-radius: 50%
-    box-shadow: 0px 0px 0px 9999px #fff
-    z-index: -1
-  &:after
-    content: ""
-    position: absolute
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
-    box-shadow: inset 0px -300px 243px -300px inherit
+  display: none
+  &--left
+    &:before
+      content: ""
+      position: absolute
+      top: 50%
+      right: -36px
+      transform: translateY(-50%)
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      box-shadow: 0 0 0 9999px #fff
+      z-index: -1
+    &:after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      box-shadow: inset 0px -300px 243px -300px inherit
+  &--right
+    &:before
+      content: ""
+      position: absolute
+      top: 50%
+      left: -36px
+      transform: translateY(-50%)
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      box-shadow: 0 0 0 9999px #ffffff
+      z-index: -1
+    &:after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      box-shadow: inset 0px -300px 243px -300px inherit
+  &--bottom
+    &:before
+      content: ""
+      position: absolute
+      bottom: -36px
+      left: 50%
+      transform: translateX(-50%)
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      box-shadow: 0px 0px 0px 9999px #fff
+      z-index: -1
+    &:after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      box-shadow: inset 0px -300px 243px -300px inherit
   &__title
     font-family: $museoMid
     font-size: 18px
@@ -137,13 +208,32 @@
     top: 114px
     left: -217px
   &--item2
-    top: 266px
+    top: 255px
     left: -252px
   &--item3
-    bottom: 95px
+    bottom: 73px
     left: -220px
+  &--item4
+    top: 103px
+    right: -217px
+  &--item5
+    top: 246px
+    right: -252px
+  &--item6
+    bottom: 52px
+    right: -220px
+  &--item7
+    bottom: 31px
+    right: 217px
   &__text
     font-family: $museo
     font-size: 14px
     line-height: 21px
     margin-top: 15px
+
+.active
+  &:after
+    background-image: linear-gradient(to top, #ff4200 0%, #ff8e09 100%)
+    opacity: 0.15
+    transition: .7s ease-in-out
+
