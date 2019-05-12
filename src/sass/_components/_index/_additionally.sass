@@ -1,0 +1,132 @@
+.addit
+  position: relative
+  &:before
+    content: ""
+  &__ant
+    width: 29%
+    position: absolute
+    top: -305px
+    right: 0
+  &__ant-img
+    display: block
+    object-fit: cover
+  &__ant-text
+    font-family: $epsilon
+    font-size: 35px
+    color: $dark
+  &__wrapper
+    margin-top: 155px
+  &__item
+    width: 48%
+    box-shadow: 0 6px 49px rgba(0, 0, 0, 0.05)
+    border-radius: 5px
+    background-color: $white
+    position: relative
+    padding: 20px
+    box-sizing: border-box
+  &__info
+    margin-top: 20px
+  &__title
+    font-family: $museoBold
+    font-size: 20px
+  &__text
+    margin-top: 10px
+  &__col
+    width: 47%
+    display: block
+    font-family: $museo
+    font-size: 16px
+    color: $grey
+  &__list
+    position: relative
+    &:after
+      content: "70*70*70мм"
+      font-family: $museoBold
+      font-size: 12px
+      position: absolute
+      top: 0
+      right: 0
+    li
+      padding-bottom: 9px
+      position: relative
+      &:before
+        content: ""
+        width: 5px
+        height: 5px
+        background: $green
+        border-radius: 50%
+        position: absolute
+        top: 8px
+        left: -10px
+  &__price
+    font-family: $museoBold
+    font-size: 20px
+    color: $dark
+    display: inline-block
+    margin-left: 35px
+  &__txt
+    font-family: $museo
+    font-size: 16px
+    color: $grey
+    margin-bottom: 50px
+  &__radio
+    display: inline-block
+    float: right
+    margin-top: 10px
+
+
+.fotorama
+  &__big
+    width: 217px
+    height: 153px
+    display: inline-block
+    border-radius: 5px
+    overflow: hidden
+    position: absolute
+    left: 20px
+    top: -77px
+    cursor: pointer
+    img
+      width: 100%
+      height: auto
+      object-fit: cover
+  &__thumbnails
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 50%
+    float: right
+    li
+      display: inline-block
+      width: 79px
+      height: 56px
+      border-radius: 5px
+      overflow: hidden
+      cursor: pointer
+      img
+        width: 100%
+        height: auto
+        object-fit: cover
+
+input.radio-btn
+  display: none
+label.radio-label
+  display: inline-block
+  width: 30px
+  height: 30px
+  border-radius: 5px
+  border: 1px solid $grey3
+  font-family: $museoBold
+  font-size: 20px
+  color: $grey3
+  text-transform: uppercase
+  text-align: center
+  line-height: 30px
+  cursor: pointer
+
+input.radio-btn:checked+label.radio-label
+  background-image: linear-gradient(-202deg, #ffad09 0%, #ff8609 100%)
+  border: none
+  color: $white
+  width: 32px
+  height: 32px

@@ -1,0 +1,80 @@
+.promo
+  height: 205px
+  background-image: url(../img/BG.jpg)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  position: relative
+  padding: 45px 0
+  box-sizing: border-box
+  margin-top: 60px
+  &__wrapper
+    position: relative
+    &:after
+      content: ""
+      width: 192px
+      height: 120px
+      background: url(../img/contur.png) no-repeat center center
+      position: absolute
+      bottom: -130px
+      right: 20px
+  &__title
+    height: 116px
+    width: 254px
+    background: $white
+    position: relative
+    display: inline-block
+    h2
+      font-size: 70px
+      display: inline-block
+      height: 116px
+      line-height: 116px
+    &:before
+      content: ""
+      height: 116px
+      width: 9999px
+      position: absolute
+      right: 254px
+      top: 0
+      background: $white
+  &__full-kit
+    display: inline-block
+    color: $white
+    font-family: $museoBold
+    p
+      font-size: 22px
+      display: block
+    strong
+      font-size: 64px
+      display: inline-block
+      margin: 0
+      padding: 0
+    span
+      font-size: 22px
+      display: inline-block
+      margin-left: 10px
+  &__code
+    display: inline-block
+    width: 228px
+    height: 116px
+    border-radius: 5px
+    border: 2px dashed $white
+    background-color: $green3
+    color: $white
+    font-family: $museoBold
+    box-sizing: border-box
+    padding: 9px 20px
+    p
+      font-size: 20px
+      display: block
+    strong
+      font-size: 58px
+      display: block
+  &__text
+    width: 225px
+    height: 74px
+    display: inline-block
+    font-family: $museo
+    font-size: 20px
+    color: $white
+    align-self: flex-end
