@@ -1884,6 +1884,36 @@ input.radio-btn:checked + label.radio-label {
     float: left;
     margin-top: 9px; }
 
+/*======== difference =========*/
+.difference {
+  padding-top: 65px; }
+  .difference__wrapper {
+    margin-top: 79px; }
+  .difference__icon {
+    height: 73px;
+    position: relative; }
+    .difference__icon img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .difference__item {
+    width: 297px;
+    margin-bottom: 80px; }
+  .difference__title {
+    font-family: "MuseoSansCyrl-500", sans-serif;
+    font-size: 22px;
+    color: #373749;
+    margin-top: 35px; }
+  .difference__text {
+    font-family: "MuseoSansCyrl-300", sans-serif;
+    font-size: 16px;
+    color: #949297;
+    padding-top: 20px; }
+
+/*========== reviews =========*/
 /*======== delivery ============*/
 .delivery {
   margin-top: 60px;
@@ -1895,7 +1925,10 @@ input.radio-btn:checked + label.radio-label {
     padding-right: 37px;
     padding-bottom: 17px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    -webkit-box-shadow: 0 6px 49px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 6px 49px rgba(0, 0, 0, 0.05);
+    border-radius: 5px; }
   .delivery__img {
     width: 35%;
     position: relative; }
@@ -1938,6 +1971,102 @@ input.radio-btn:checked + label.radio-label {
     font-size: 16px;
     color: #949297;
     margin-top: 21px; }
+
+/*======== question ==========*/
+.question {
+  padding-top: 31px; }
+  .question__wrapper {
+    margin-top: 64px; }
+    .question__wrapper li {
+      width: 75%;
+      margin-bottom: 43px; }
+  .question__title {
+    font-family: "MuseoSansCyrl-500", sans-serif;
+    font-size: 22px;
+    color: #24be4e;
+    position: relative; }
+    .question__title:before {
+      content: "";
+      width: 25px;
+      height: 25px;
+      background: url(../img/qwn.png) no-repeat;
+      position: absolute;
+      top: 0;
+      left: -35px; }
+  .question__text {
+    font-family: "MuseoSansCyrl-300", sans-serif;
+    font-size: 16px;
+    color: #949297;
+    padding-top: 19px; }
+  .question__btn-block {
+    width: 100%;
+    position: relative; }
+  .question__btn {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .question__btn-lebel {
+    font-family: "EpsilonCTT", sans-serif;
+    font-size: 35px;
+    color: #373749;
+    position: absolute;
+    right: 0;
+    top: -143px; }
+    .question__btn-lebel:after {
+      content: "";
+      width: 441px;
+      height: 135px;
+      background: url(../../../img/arrow__qtn.png) no-repeat;
+      position: absolute;
+      left: -135px;
+      bottom: -102px; }
+
+/*======= contacts ===========*/
+.contacts {
+  margin-top: 70px;
+  position: relative;
+  padding: 48px 0;
+  height: 373px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+  .contacts__wrapper {
+    max-width: 365px;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 24px 20px; }
+    .contacts__wrapper h4 {
+      display: block;
+      font-family: "MuseoSansCyrl-900", sans-serif;
+      font-size: 20px;
+      color: #24be4e;
+      padding-bottom: 19px;
+      border-bottom: 1px solid #d4d4d4; }
+  .contacts__info {
+    font-family: "MuseoSansCyrl-300", sans-serif;
+    font-size: 16px;
+    color: #949297;
+    padding-top: 9px; }
+    .contacts__info strong {
+      font-family: "MuseoSansCyrl-500", sans-serif;
+      color: #373749; }
+    .contacts__info p {
+      padding: 5px 0; }
+  .contacts__timework {
+    font-family: "MuseoSansCyrl-300", sans-serif;
+    font-size: 16px;
+    color: #949297;
+    line-height: 1.6; }
+    .contacts__timework strong {
+      font-family: "MuseoSansCyrl-500", sans-serif;
+      color: #373749; }
 
 /*========= footer ===========*/
 .footer {
