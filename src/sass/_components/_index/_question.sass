@@ -5,11 +5,18 @@
     li
       width: 75%
       margin-bottom: 43px
+      +respond-to(992)
+        width: 100%
   &__title
     font-family: $museoMid
     font-size: 22px
     color: $green
     position: relative
+    +respond-to(690)
+      font-size: 35px
+      padding-left: 50px
+    +respond-to(480)
+      font-size: 25px
     &:before
       content: ""
       width: 25px
@@ -18,11 +25,22 @@
       position: absolute
       top: 0
       left: -35px
+      +respond-to(690)
+        top: 4px
+        left: 0
+        background: url(../img/qwn_mob.png) no-repeat
+        width: 35px
+        height: 35px
   &__text
     font-family: $museo
     font-size: 16px
     color: $grey
     padding-top: 19px
+    +respond-to(690)
+      font-size: 25px
+      padding-left: 50px
+    +respond-to(480)
+      font-size: 20px
   &__btn-block
     width: 100%
     position: relative
@@ -37,6 +55,8 @@
     position: absolute
     right: 0
     top: -143px
+    +respond-to(992)
+      display: none
     &:after
       content: ""
       width: 441px

@@ -4,16 +4,26 @@
   padding: 48px 0
   height: 373px
   box-sizing: border-box
+  +respond-to(690)
+    height: auto
+    display: flex
+    flex-direction: column-reverse
   &__map
     position: absolute
     top: 0
     left: 0
     right: 0
+    +respond-to(690)
+      position: relative
   &__wrapper
     max-width: 365px
     background: $white
     box-sizing: border-box
     padding: 24px 20px
+    +respond-to(690)
+      width: 100%
+      max-width: 100%
+      border-top: 1px solid $grey2
     h4
       display: block
       font-family: $museoBold
@@ -21,13 +31,25 @@
       color: $green
       padding-bottom: 19px
       border-bottom: 1px solid $grey2
+      text-align: center
+      +respond-to(690)
+        font-size: 42px
+      +respond-to(480)
+        font-size: 32px
   &__info
     font-family: $museo
     font-size: 16px
     color: $grey
     padding-top: 9px
+    +respond-to(690)
+      font-size: 25px
+    +respond-to(480)
+      font-size: 20px
     strong
       font-family: $museoMid
+      color: $grey
+    a
+      font-family: $museo
       color: $dark
     p
       padding: 5px 0
@@ -36,6 +58,10 @@
     font-size: 16px
     color: $grey
     line-height: 1.6
+    +respond-to(690)
+      font-size: 22px
+    +respond-to(480)
+      font-size: 18px
     strong
       font-family: $museoMid
       color: $dark

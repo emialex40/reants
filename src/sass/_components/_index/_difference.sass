@@ -5,21 +5,42 @@
   &__icon
     height: 73px
     position: relative
+    +respond-to(992)
+      height: 150px
+    +respond-to(690)
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
     img
       position: absolute
       top: 50%
       left: 0
       transform: translateY(-50%)
+      +respond-to(690)
+        position: relative
   &__item
     width: 297px
     margin-bottom: 80px
+    +respond-to(690)
+      width: 100%
   &__title
     font-family: $museoMid
     font-size: 22px
     color: $dark
     margin-top: 35px
+    +respond-to(690)
+      text-align: center
+      font-size: 30px
+    +respond-to(480)
+      font-size: 6vw
   &__text
     font-family: $museo
     font-size: 16px
     color: $grey
     padding-top: 20px
+    +respond-to(690)
+      text-align: center
+      font-size: 25px
+    +respond-to(480)
+      font-size: 5vw

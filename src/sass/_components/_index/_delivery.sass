@@ -2,6 +2,9 @@
   margin-top: 60px
   background: $white2
   padding-top: 30px
+  h2
+    +respond-to(992)
+      display: none
   &__wrap-top
     margin-top: 55px
     background: $white
@@ -10,44 +13,107 @@
     box-sizing: border-box
     box-shadow: 0 6px 49px rgba(0, 0, 0, 0.05)
     border-radius: 5px
+    +respond-to(794)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding-bottom: 32px
+    +respond-to(480)
+      padding-right: 0
   &__img
     width: 35%
     position: relative
+    +respond-to(794)
+      width: 70%
+    +respond-to(690)
+      width: 96%
     img
       width: 100%
       object-fit: cover
       position: absolute
       left: 0
       top: -24px
+      +respond-to(992)
+        top: 0
+      +respond-to(794)
+        position: relative
+      +respond-to(480)
+        transform: translateX(7px)
   &__top
     width: 62%
+    +respond-to(794)
+      width: 75%
+    +respond-to(690)
+      width: 95%
   &__head
     margin-top: 26px
+    +respond-to(794)
+      font-size: 42px
+    +respond-to(585)
+      font-size: 7vw
+    +respond-to(458)
+      font-size: 25px
   &__desc
     font-family: $museo
     font-size: 16px
     color: $grey
     margin-top: 6px
+    +respond-to(794)
+      font-size: 30px
+      line-height: 1.4
+    +respond-to(585)
+      font-size: 5vw
+    +respond-to(458)
+      font-size: 20px
+      margin-top: 25px
   &__bottom
     margin-top: 14px
     position: relative
+    +respond-to(794)
+      margin-top: 55px
   &__btn
     float: right
     margin-right: 60px
+    +respond-to(794)
+      float: none
+      margin-right: 0
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
   &__arrow
     position: absolute
     left: -60px
     bottom: 11px
+    +respond-to(1106)
+      display: none
   &__wrap-bottom
     padding-top: 57px
+    +respond-to(935)
+      justify-content: space-around
+    +respond-to(690)
+      flex-direction: column
+      justify-content: center
+      align-items: center
   &__item
     width: 293px
+    +respond-to(935)
+      margin-bottom: 30px
+    +respond-to(690)
+      width: 100%
   &__title
     font-family: $museoMid
     font-size: 22px
     color: $dark
+    +respond-to(690)
+      width: 100%
+      display: block
+      text-align: center
+      font-size: 30px
   &__txt
     font-family: $museo
     font-size: 16px
     color: $grey
     margin-top: 21px
+    +respond-to(690)
+      text-align: center
+      font-size: 25px

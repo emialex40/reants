@@ -3,4 +3,9 @@
 
 import "./common"
 
- import "./jquery.fancybox.min"
+import 'slick-carousel/slick/slick.min';
+import 'owl.carousel/dist/owl.carousel.min';
+import '@fancyapps/fancybox/dist/jquery.fancybox.min';
+import 'magnific-popup/dist/jquery.magnific-popup.min'
+
+

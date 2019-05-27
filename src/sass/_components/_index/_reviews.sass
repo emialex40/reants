@@ -1,1 +1,230 @@
-//
+.reviews
+  padding-top: 56px
+  &__wrapper
+    margin-top: 41px
+  &__btn-block
+    width: 100%
+    padding-bottom: 60px
+    margin-top: -28px
+    +respond-to(992)
+      margin-top: 28px
+    +respond-to(690)
+      padding-bottom: 135px
+  &__buttons
+    position: absolute
+    display: inline-block
+    height: 55px
+    padding: 0 39px
+    left: 50%
+    top: 0
+    transform: translateX(-50%)
+
+.slider
+  padding: 0 8%
+  box-sizing: border-box
+  height: 390px
+  +respond-to(1763)
+    padding: 0 2%
+  +respond-to(1425)
+    padding: 0
+  +respond-to(992)
+    height: 592px
+  +respond-to(542)
+    width: 100%
+  +respond-to(480)
+    height: 440px
+  +respond-to(462)
+    height: 380px
+  +respond-to(422)
+    height: 398px
+  +respond-to(396)
+    height: 440px
+  &__item
+    width: 424px
+    outline: none
+    z-index: 0
+    position: relative
+    +respond-to(992)
+      width: 592px
+    +respond-to(542)
+      width: 100%
+  &__wrap
+    width: 424px
+    margin: 0 auto
+    background: $white
+    box-shadow: 0 6px 49px rgba(0, 0, 0, 0.05)
+    padding: 20px
+    box-sizing: border-box
+    position: relative
+    border-radius: 5px
+    z-index: 0 !important
+    +respond-to(992)
+      width: 592px
+    +respond-to(542)
+      width: 100%
+  &__img
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    overflow: hidden
+    display: block
+    position: absolute
+    top: -30px
+    left: 50%
+    transform: translateX(-50%)
+    +respond-to(992)
+      width: 150px
+      height: 150px
+      top: -105px
+    +respond-to(480)
+      width: 125px
+      height: 125px
+      top: -60px
+    img
+      width: 100%
+      object-fit: cover
+  &__title
+    font-family: $museoBold
+    font-size: 11px
+    color: $green
+    text-align: center
+    padding-top: 28px
+    +respond-to(992)
+      font-size: 30px
+    +respond-to(480)
+      font-size: 24px
+      padding-top: 60px
+  &__text
+    font-family: $museo
+    font-size: 10px
+    color: $grey
+    margin-top: 15px
+    padding-bottom: 27px
+    +respond-to(992)
+      font-size: 25px
+    +respond-to(480)
+      font-size: 18px
+
+.slick-center
+  transform: scale(1.1)
+  transition: .3s ease
+  z-index: 1
+  +respond-to(992)
+    transform: none
+    transition: none
+
+//.slick-center > .slider__wrap
+//  z-index: 2
+
+
+.slick-center > .slider__img
+  transform: scale(1.25)
+  transition: .3s ease
+  +respond-to(992)
+    transform: none
+    transition: none
+
+.slick-center > .slider__wrap > h4
+  font-size: 20px
+  margin-top: 30px
+  transition: .3s ease
+  padding-top: 0
+  +respond-to(992)
+    font-size: 30px
+
+.slick-center > .slider__wrap > p
+  margin-top: 35px
+  font-size: 11px
+  transition: .3s ease
+  +respond-to(992)
+    font-size: 25px
+    transition: none
+
+.slick-list
+  padding: 65px 0 !important
+  +respond-to(992)
+    padding: 110px 0 !important
+
+.slick-active:not(.slick-center)
+  margin-top: 24px
+
+.slick-dots
+  position: relative !important
+  bottom: 0
+
+.dots-item
+  display: inline-block
+  width: 8px
+  height: 8px
+  background-color: $grey2
+  border-radius: 50%
+
+.slick-active > .dots-item
+  width: 12px
+  height: 12px
+  border-radius: 50%
+  background-color: $green
+  
+.prev, .next
+  width: 37px
+  height: 37px
+  box-sizing: border-box
+  border: 3px solid $white
+  background-image: linear-gradient(to top, #ffa800 0%, #ffbd09 100%)
+  border-radius: 50%
+  cursor: pointer
+  outline: none
+  position: absolute
+  top: 14px
+  &:after
+    content: ""
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-image: linear-gradient(to top, #ffa800 0%, #ffbd09 100%)
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    z-index: 2
+    opacity: 0
+    transition: .5s ease-in-out
+  &:hover:after
+    opacity: .12
+    transition: .5s ease-in-out
+
+  i
+    width: 25px
+    height: 25px
+    background: $white
+    border-radius: 50%
+    position: absolute
+    z-index: 1
+
+.prev
+  left: 0
+  i
+    top: 2.6px
+    left: 3.5px
+    &:after
+      content: ""
+      width: 10px
+      height: 17px
+      background: url(../img/arrow_left.png) no-repeat
+      position: absolute
+      left: 6px
+      top: 4px
+
+.next
+  right: 0
+  i
+    top: 2.6px
+    right: 2.5px
+    &:after
+      content: ""
+      width: 10px
+      height: 17px
+      background: url(../img/arrow_right.png) no-repeat
+      position: absolute
+      left: 9px
+      top: 4px

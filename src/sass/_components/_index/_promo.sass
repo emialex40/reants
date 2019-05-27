@@ -1,5 +1,4 @@
 .promo
-  height: 205px
   background-image: url(../img/BG.jpg)
   background-repeat: no-repeat
   background-position: center center
@@ -7,9 +6,12 @@
   position: relative
   padding: 45px 0
   box-sizing: border-box
-  margin-top: 60px
   &__wrapper
     position: relative
+    +respond-to(543)
+      flex-direction: column
+      justify-content: center
+      align-items: center
     &:after
       content: ""
       width: 192px
@@ -18,17 +20,25 @@
       position: absolute
       bottom: -130px
       right: 20px
+      +respond-to(480)
+        display: none
   &__title
     height: 116px
     width: 254px
     background: $white
     position: relative
     display: inline-block
+    +respond-to(480)
+      background: inherit
     h2
       font-size: 70px
       display: inline-block
       height: 116px
       line-height: 116px
+      +respond-to(480)
+        color: $white
+        display: block
+        text-align: center
     &:before
       content: ""
       height: 116px
@@ -37,10 +47,14 @@
       right: 254px
       top: 0
       background: $white
+      +respond-to(480)
+        display: none
   &__full-kit
     display: inline-block
     color: $white
     font-family: $museoBold
+    +respond-to(543)
+      margin-top: 20px
     p
       font-size: 22px
       display: block
@@ -49,6 +63,8 @@
       display: inline-block
       margin: 0
       padding: 0
+      +respond-to(605)
+        font-size: 40px
     span
       font-size: 22px
       display: inline-block
@@ -64,6 +80,8 @@
     font-family: $museoBold
     box-sizing: border-box
     padding: 9px 20px
+    +respond-to(819)
+      margin-top: 20px
     p
       font-size: 20px
       display: block
@@ -78,3 +96,6 @@
     font-size: 20px
     color: $white
     align-self: flex-end
+    +respond-to(543)
+      align-self: center
+      margin-top: 20px

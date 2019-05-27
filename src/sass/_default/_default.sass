@@ -37,6 +37,8 @@ body
   box-sizing: border-box
   margin: 0 auto
   position: relative
+  +respond-to(992)
+    padding: 0 20px
 
 .row
   display: flex
@@ -57,16 +59,43 @@ h1
   color: $black2
   font-family: $museoBold
   font-size: 3.6em
+  +respond-to(992)
+    font-size: 5.84vw
+    text-align: center
+  +respond-to(690)
+    font-size: 5.70vw
+  +respond-to(556)
+    font-size: 5.6vw
+  +respond-to(480)
+    display: none
+
+.front-mob
+  display: none
+  +respond-to(480)
+    display: block
+    font-size: 24px
+  +respond-to(396)
+    font-size: 22px
+  +respond-to(350)
+    font-size: 19px
 
 h2
   color: $green
   font-family: $museoBold
   font-size: 3.2em
+  +respond-to(992)
+    font-size: 5.6vw
+  +respond-to(690)
+    font-size: 5.8vw
 
 h3
   color: $green
   font-family: $museoBold
   font-size: 25px
+  +respond-to(690)
+    font-size: 5.4vw
+  +respond-to(360)
+    font-size: 20px
 
 ul
   list-style-type: none
@@ -100,9 +129,34 @@ a
   &:hover
     transition: .5s ease-in-out
     background-image: linear-gradient(-202deg, #ff8609 0%, #ffad09 100%)
-
+  +respond-to(992)
+    width: 380px
+    height: 90px
+    font-size: 27px
+  +respond-to(480)
+    width: 250px
+    height: 60px
+    font-size: 18px
 .text
   font-size: 1.6rem
+
+.btn-cat
+  display: inline-block
+  width: 250px
+  height: 60px
+  box-shadow: inset 0 -3px 0 rgba(22, 22, 22, 0.17)
+  border-radius: 5px
+  background-color: $blue
+  font-family: $museoMid
+  font-size: 18px
+  color: $white
+  background-image: linear-gradient(-202deg, #ffad09 0%, #ff8609 100%)
+  transition: .5s ease-in-out
+  border: none
+  cursor: pointer
+  &:hover
+    transition: .5s ease-in-out
+    background-image: linear-gradient(-202deg, #ff8609 0%, #ffad09 100%)
 
 .vk
   display: inline-block
@@ -112,6 +166,13 @@ a
   border-radius: 50%
   position: relative
   margin-left: 18px
+  +respond-to(992)
+    width: 62px
+    height: 62px
+    margin-left: 0
+  +respond-to(480)
+    width: 34px
+    height: 34px
   &:after
     content: ""
     width: 50px
@@ -122,12 +183,18 @@ a
     top: -8px
     left: -8px
     border-radius: 50%
-    transition: .7s ease-in-out
     z-index: 0
+    +respond-to(992)
+      width: 75px
+      height: 75px
+      top: -6px
+      left: -6px
+    +respond-to(480)
+      width: 50px
+      height: 50px
   &:hover
     &:after
       opacity: .22
-      transition: .7s ease-in-out
   i
     font-size: 19px
     color: $white
@@ -137,11 +204,17 @@ a
     transform: translate(-50%,-50%)
     z-index: 1
     opacity: .999
+    +respond-to(992)
+      font-size: 34px
+    +respond-to(480)
+      font-size: 19px
 
 .insta
   @extend .vk
   background-image: linear-gradient(45deg, #9c35a5 0%, #c53087 50%, #f87031 100%)
   position: relative
+  +respond-to(992)
+    margin-left: 18px
   &:after
     background-image: linear-gradient(45deg, #9c35a5 0%, #c53087 50%, #f87031 100%)
   i
@@ -153,6 +226,10 @@ a
     transform: translate(-50%,-50%)
     z-index: 1
     opacity: .999
+    +respond-to(992)
+      font-size: 34px
+    +respond-to(480)
+      font-size: 19px
 
 .rotate
   transform: rotate(90deg)
@@ -181,5 +258,139 @@ a
   //text-transform: uppercase
   font-weight: 900
 
+#layout
+  display: none
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  right: 0
+  position: fixed
+  background: $black
+  opacity: .8
+  z-index: 999
+
+.fix-padding
+  padding-right: 17px
+  overflow: hidden
+
+.humb
+  display: none
+  position: absolute
+  top: 0
+  right: 20px
+  width: 60px
+  height: 47px
+  cursor: pointer
+  +respond-to(950)
+    display: inline-block
+  &__line
+    width: $bar-width
+    height: $bar-height
+    position: relative
+    transform: translateY($bar-spacing)
+    background: $orange
+    transition: all 0ms 300ms
+    &:before
+      content: ""
+      width: $bar-width
+      height: $bar-height
+      position: absolute
+      left: 0
+      bottom: $bar-spacing
+      background: $orange
+      transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+    &:after
+      content: ""
+      width: $bar-width
+      height: $bar-height
+      position: absolute
+      left: 0
+      top: $bar-spacing
+      background: $orange
+      transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+.animate
+  background: rgba(255, 255, 255, 0)
+  &:after
+    top: 0
+    transform: rotate(45deg)
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
+  &:before
+    bottom: 0
+    transform: rotate(-45deg)
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+.desc
+  display: inline-block
+  +respond-to(992)
+    display: none
+
+.mob
+  display: none
+  +respond-to(992)
+    display: block
+
+.vk-button
+  width: 290px
+  height: 34px
+  display: flex
+  align-items: center
+  background-image: linear-gradient(13deg, #3d598d 0%, #6789b9 100%)
+  border-radius: 5px
+  color: $white
+  padding-left: 15px
+  box-sizing: border-box
+  position: absolute
+  top: -79px
+  left: 50%
+  transform: translateX(-50%)
+  opacity: .999
+  z-index: 100
+  +respond-to(992)
+    top: 0
+  +respond-to(690)
+    top: 65px
+  +respond-to(690)
+    width: 70%
+    box-sizing: border-box
+  +respond-to(542)
+    width: 292px
+    top: 140px
+  +respond-to(462)
+    top: 200px
+  &:hover
+    box-shadow: 0 0 5px 5px rgba(6,120,155,0.21)
+  i
+    font-size: 19px
+    +respond-to(992)
+      font-size: 32px
+    +respond-to(542)
+      font-size: 19px
+  span
+    font-family: $museoMid
+    font-size: 14px
+    padding-left: 15px
+    +respond-to(992)
+      font-size: 24px
+    +respond-to(542)
+      font-size: 14px
+      vertical-align: middle
 
 
+.img-modal
+  //background: #000
+  position: fixed
+  width: auto
+  height: 80%
+  left: 0
+  top: 0
+  right: 0
+  z-index: 100000
+  img
+    width: 100%
+    height: auto
+    object-fit: cover
+    position: absolute
+    top: 0
+    left: 0

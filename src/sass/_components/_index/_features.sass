@@ -1,14 +1,24 @@
 .features
   margin-top: 100px
+  &__wrapper
+    +respond-to(480)
+      justify-content: center
+      align-items: center
   &__item
     width: 225px
     margin-bottom: 38px
   &__img
+    display: inline-block
     width: 60px
     height: 60px
     border-radius: 5px
     overflow: hidden
     border: 1px solid $grey2
+    +respond-to(480)
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+      transform: translateX(-50%)
     img
       width: 100%
       object-fit: cover
@@ -17,3 +27,5 @@
     font-size: 16px
     color: $grey
     margin-top: 20px
+    +respond-to(480)
+      text-align: center

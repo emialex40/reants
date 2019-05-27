@@ -1,0 +1,264 @@
+.modal-cart
+  top: 15px
+  transform: translateX(-50%)
+  padding: 25px 0 25px 15px
+  border-radius: 5px
+
+.op-cart
+  width: 100%
+  max-width: 896px
+
+.cart
+  padding: 25px 20px 30px
+  box-sizing: border-box
+  overflow: auto
+  height: 90vh
+  &__top-wrap
+    padding-bottom: 18px
+    border-bottom: 1px solid $lightGray
+    +respond-to(785)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  &__left
+    width: 39%
+    +respond-to(785)
+      width: 307px
+    +respond-to(390)
+      width: 285px
+  &__right
+    width: 57%
+    +respond-to(785)
+      width: 307px
+    +respond-to(390)
+      width: 285px
+  &__left-title
+    font-family: $museo
+    font-size: 22px
+    color: $dark
+  &__img-top
+    width: 305px
+    height: auto
+    max-height: 172px
+    border-radius: 5px
+    position: relative
+    +respond-to(390)
+      width: 285px
+    li
+      img
+        width: 100%
+        object-fit: cover
+  &__img-bottom
+    margin-top: 20px
+  &__img-bottom-list
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    +respond-to(846)
+      justify-content: space-between
+  &__img-bottom-item
+    width: 68px
+    height: 38px
+    border-radius: 5px
+    overflow: hidden
+    margin-bottom: 10px
+    position: relative
+    cursor: pointer
+    margin-right: 10px
+    +respond-to(846)
+      margin-right: 0
+    &:nth-child(4n + 4)
+      margin-right: 0
+    &:after
+      content: ''
+      width: 68px
+      height: 38px
+      background-color: $black
+      position: absolute
+      background-image: url(../img/check.png)
+      background-repeat: no-repeat
+      background-position: center center
+      top: 0
+      right: 0
+      left: 0
+      z-index: 1
+      opacity: 0
+      transition: .5s
+    &:hover:after
+      opacity: .8
+      transition: .5s
+    img
+      width: 100%
+      height: 38px
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+  &__img-choose:not(.cart__img-bottom-list li)
+    width: 136px
+    p
+      font-family: $museoMid
+      font-size: 15px
+      color: $dark
+    span
+      font-family: $museo
+      font-size: 15px
+      color: $green
+  &__right-title
+    font-family: $museoBold
+    font-size: 22px
+    color: $green
+    text-transform: uppercase
+  &__right-subtitle
+    font-family: $museo
+    font-size: 15px
+    color: $grey
+    margin-top: 15px
+  &__desc-title
+    font-family: $museo
+    font-size: 22px
+    color: $dark
+    margin-top: 35px
+  &__desc
+    margin-top: 13px
+    font-family: $museo
+    font-size: 15px
+    color: $grey
+    li
+      padding-top: 7px
+      padding-bottom: 7px
+      padding-left: 12px
+      position: relative
+      &:after
+        content: ""
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        background: $green
+        position: absolute
+        top: 13px
+        left: 0
+  &__price-block
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: 1px solid $lightGray
+    +respond-to(785)
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      width: 335px
+      margin: 0 auto
+  &__price
+    width: 45%
+    +respond-to(785)
+      width: 100%
+  &__btn-block
+    width: 50%
+    +respond-to(785)
+      width: 100%
+  &__btn
+    +respond-to(785)
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+  &__radio
+    display: inline-block
+    line-height: 60px
+  &__hide
+    padding-top: 20px
+    display: none
+  &__hide-title
+    font-family: $museo
+    font-size: 22px
+    color: $dark
+    margin-bottom: 37px
+
+.price-row
+  p
+    display: inline
+    font-size: 20px
+
+input.cart__radio-btn
+  display: none
+label.cart__radio-label
+  display: inline-block
+  width: 48px
+  height: 30px
+  border-radius: 5px
+  border: 1px solid $grey3
+  font-family: $museoBold
+  font-size: 20px
+  color: $grey3
+  text-transform: uppercase
+  text-align: center
+  line-height: 30px
+  cursor: pointer
+
+input.cart__radio-btn:checked + label.cart__radio-label
+  background-image: linear-gradient(-202deg, #ffad09 0%, #ff8609 100%)
+  border: none
+  color: $white
+  width: 50px
+  height: 32px
+
+.cart-slider > .slick-list > .slick-track > .slick-active
+  margin-top: 0
+.cart-slider >  .slick-list
+  padding: 0 !important
+
+.cart-slider
+  margin-top: 18px
+
+.cart-prev
+  width: 10px
+  height: 17px
+  background: url(../img/cart-prev.png) no-repeat
+  border: none
+  position: absolute
+  left: 15px
+  top: 50%
+  transform: translate(-50%)
+  cursor: pointer
+  z-index: 10
+  outline: none
+
+
+.cart-next
+  width: 10px
+  height: 17px
+  background: url(../img/cart-prev.png) no-repeat
+  border: none
+  position: absolute
+  right: 15px
+  top: 50%
+  transform: translate(-50%) rotate(180deg)
+  cursor: pointer
+  z-index: 10
+  outline: none
+  +respond-to(390)
+    right: 7px
+
+.overlay
+  border: 2px solid $green
+  box-sizing: border-box
+  &:after
+    content: ""
+    width: 68px
+    height: 38px
+    background-color: $black
+    position: absolute
+    background-image: url(../img/check.png)
+    background-repeat: no-repeat
+    background-position: center center
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1
+    opacity: .8
+    transition: .5s
+
+.img-tabs
+  position: relative
+  img
+    width: 100%
+    object-fit: cover

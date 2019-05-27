@@ -1,32 +1,58 @@
 .front
-  background-image: url(../../../img/top_bg.png)
+  background-image: url(../img/top_bg.png)
   background-repeat: no-repeat
   background-position: center center
   background-size: cover
   background-color: $white
   &__wrapper
     padding-bottom: 63px
+    +respond-to(992)
+      display: flex
+      flex-direction: column-reverse
+      width: 100%
   &__header
     padding-top: 83px
     float: left
     z-index: 1
     opacity: .999
+    +respond-to(480)
+      padding-top: 42px
     span
       font-family: $museoMid
       font-size: 2.2em
       color: $dark
       display: block
       margin-top: 36px
+      +respond-to(992)
+        font-size: 4.6vw
+        text-align: center
   &__btn
     margin-top: 56px
+    +respond-to(992)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
   &__social
     display: inline-block
     transform: translateY(10px)
+    +respond-to(992)
+      margin-top: 50px
+    +respond-to(480)
+      margin-top: 25px
   &__img
     width: 62.5%
     float: right
     margin-top: -355px
     z-index: 0
+    +respond-to(1068)
+      margin-top: -330px
+    +respond-to(992)
+      float: none
+      width: 100%
+      margin-top: 0
+    +respond-to(480)
+      margin-top: -150px
     img
       width: 100%
       object-fit: cover
@@ -40,6 +66,8 @@
       width: 22.2%
     +respond-to(1041)
       bottom: 80px
+    +respond-to(992)
+      display: none
     img
       width: 100%
       object-fit: cover

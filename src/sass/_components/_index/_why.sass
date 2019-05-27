@@ -2,26 +2,55 @@
   margin-top: 37px
   &__wrapper
     margin-top: 66px
+    +respond-to(992)
+      justify-content: space-around
   &__item
     width: 303px
+    +respond-to(992)
+      margin-bottom: 60px
+    +respond-to(690)
+      width: 100%
   &__icon
     width: 73px
     height: 73px
     background-position: center center
     background-repeat: no-repeat
+    +respond-to(992)
+      width: 150px
+      height: 150px
+      display: inline-block
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
     &--ant
       background-image: url(../img/icon_avg1.png)
+      +respond-to(992)
+        background-image: url(../img/icon_avg1_mob.png)
     &--zoom
       background-image: url(../img/icon_avg2.png)
+      +respond-to(992)
+        background-image: url(../img/icon_avg2_mob.png)
     &--face
       background-image: url(../img/icon_avg3.png)
+      +respond-to(992)
+        background-image: url(../img/icon_avg3_mob.png)
   &__title
     font-family: $museoMid
     font-size: 22px
     color: $dark
     padding-top: 26px
+    +respond-to(690)
+      text-align: center
+      font-size: 4.6vw
+    +respond-to(480)
+      font-size: 22px
   &__text
     font-family: $museo
     font-size: 16px
     color: $grey
     padding-top: 21px
+    +respond-to(690)
+      font-size: 3.6vw
+      text-align: center
+    +respond-to(480)
+      font-size: 18px

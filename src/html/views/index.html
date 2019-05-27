@@ -1,7 +1,16 @@
-<% var data = {
-  title: "Муравьинные фермы"
-}; %>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="css/style.min.css" />
+
+  <title>Муравьинные фермы</title>
+</head>
+<body>
+  <div class="main-wrapper">
 <!-- header -->
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <!-- front section -->
@@ -33,3 +42,30 @@
 
 <!-- footer -->
 <%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<!--      callback modal-->
+<%= _.template(require('./../includes/callback.html').default)(data) %>
+<!--    mobile-menu-->
+<%= _.template(require('./../includes/mobile-menu.html').default)(data) %>
+<!--    modal cart-->
+<%= _.template(require('./../includes/modal-cart.html').default)(data) %>
+<!--    modal cart2-->
+<%= _.template(require('./../includes/modal-cart2.html').default)(data) %>
+<!--    modal cart3-->
+<%= _.template(require('./../includes/modal-cart3.html').default)(data) %>
+<!--    modal cart4-->
+<%= _.template(require('./../includes/modal-cart4.html').default)(data) %>
+<!--    modal cart5-->
+<%= _.template(require('./../includes/modal-cart5.html').default)(data) %>
+<!--    modal cart6-->
+<%= _.template(require('./../includes/modal-cart6.html').default)(data) %>
+<!--    modal cart7-->
+<%= _.template(require('./../includes/modal-cart7.html').default)(data) %>
+
+    </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <script src="js/index.js"></script>
+
+</body>
+</html>

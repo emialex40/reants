@@ -9,29 +9,55 @@
     color: $black2
     font-family: $museoMid
     font-size: 2.5em
+    &--mob
+      font-family: $museoMid
+      font-size: 44px
+      color: $black2
+      +respond-to(593)
+        font-size: 24px
+
 nav
   width: 62.6%
   display: inline-block
   margin-left: 48px
   margin-top: 16px
+  +respond-to(950)
+    margin-left: 0
+    width: 100%
+    margin-top: 39px
 
 .menu
   width: 100%
+  &--mob__link
+    display: inline-block
+    font-family: $museo
+    color: $grey4
+    &:hover
+      color: $green
+      text-shadow: 0 0 .9px $green, 0 0 .9px $green
+      padding: 0
   &__item
     display: inline
     font-size: 1.6em
     +respond-to(1070)
       font-size: .8rem
+    &--mob
+      display: block
+      font-family: $museo
+      font-size: 40px
+      color: $grey4
+      padding: 15px 0
+      +respond-to(593)
+        font-size: 24px
+        padding: 5px 0
   &__link
     display: inline-block
     font-family: $museo
     color: $grey4
-    transition: .5s ease-in-out
     &:hover
       color: $green
       text-shadow: 0 0 .9px $green, 0 0 .9px $green
       padding: 0
-      transition: .5s ease-in-out
 
 .logo
   display: inline-block
@@ -54,6 +80,12 @@ nav
       height: 34px
       background: url(../img/h_phone_icon.png) no-repeat center center
       position: absolute
-      top: -23px
+      top: -22px
       left: -42px
+    &--mob
+      font-family: $museo
+      font-size: 28px
+      color: $grey4
+      +respond-to(593)
+        font-size: 18px
 

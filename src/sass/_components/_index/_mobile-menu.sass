@@ -1,0 +1,24 @@
+.mobile-menu
+  width: 594px
+  height: 100%
+  z-index: 10000
+  position: fixed
+  top: 0
+  right: -594px
+  background-color: $white2
+  box-shadow: 0 6px 49px rgba(0, 0, 0, 0.05)
+  padding: 35px 20px
+  box-sizing: border-box
+  +respond-to(593)
+    width: 320px
+    right: -320px
+  &__close
+    width: 49px
+    height: auto
+    display: inline-block
+    cursor: pointer
+    +respond-to(593)
+      width: 38px
+    img
+      width: 100%
+      object-fit: cover

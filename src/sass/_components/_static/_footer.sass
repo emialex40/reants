@@ -4,17 +4,88 @@
   background: $white
   padding-top: 23px
   box-sizing: border-box
+  +respond-to(992)
+    height: auto
+    padding-bottom: 23px
+  &__control
+    align-items: center
   &__social
     display: inline-block
     margin-left: 35px
     transform: translateY(12px)
+    +respond-to(992)
+      margin-left: 0
+      margin-top: 14px
   &__info
     display: inline-block
     font-family: $museo
     font-size: 1.6em
     color: $grey4
     margin-left: 48px
+    +respond-to(992)
+      font-size: 23px
+      margin-left: 0
+      width: 60%
+    +respond-to(690)
+      width: 70%
+    +respond-to(608)
+      width: 85%
+    +respond-to(536)
+      width: 100%
+      margin-top: 20px
+      text-align: center
   &__link
     color: #2355e2
     &:hover
       text-decoration: underline
+  &__control
+    +respond-to(536)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    +respond-to(992)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+  &__vk
+    margin-left: 0
+  &__phone-block
+    +respond-to(992)
+      width: 40%
+      a
+        font-size: 44px
+      p
+        font-size: 28px
+        width: 318px
+        margin-top: 0
+      &:before
+        background: url(../img/phone_icon_mob.png) no-repeat center center
+        width: 61px
+        height: 61px
+        top: -37px
+        left: -72px
+    +respond-to(870)
+      width: 70%
+      a
+        float: right
+      p
+        float: right
+    +respond-to(536)
+      margin-top: 20px
+      text-align: center
+      p
+        float: none
+      a
+        float: none
+    +respond-to(480)
+      p
+        font-size: 18px
+        width: 170px
+      a
+        font-size: 20px
+      &:before
+        width: 34px
+        height: 34px
+        background: url(../img/h_phone_icon.png) no-repeat center center
+        top: -20px
+        left: -42px

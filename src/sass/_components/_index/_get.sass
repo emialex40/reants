@@ -8,6 +8,10 @@
     padding-right: 37px
     padding-bottom: 17px
     box-sizing: border-box
+    +respond-to(1131)
+      flex-direction: column
+      justify-content: center
+      align-items: center
   &__img
     max-width: 349px
     width: 100%
@@ -17,18 +21,38 @@
       position: absolute
       left: 5px
       top: -20px
+      +respond-to(1131)
+        position: relative
+        left: 0
+        top: -50px
   &__info
     width: 65%
+    +respond-to(781)
+      width: 100%
+      padding: 0 15px
   &__text
     font-family: $museo
     font-size: 16px
     color: $grey
     display: inline-block
     margin-top: 10px
+    +respond-to(690)
+      font-size: 4.2vw
+    +respond-to(360)
+      font-size: 16px
+      margin: 40px 0
   &__bottom
     margin-top: 15px
   &__btn
     float: right
+    +respond-to(1131)
+      float: none
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
   &__arrow
     float: left
     margin-top: 9px
+    +respond-to(1179)
+      display: none
+

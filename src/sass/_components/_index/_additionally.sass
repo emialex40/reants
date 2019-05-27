@@ -7,6 +7,16 @@
     position: absolute
     top: -305px
     right: 0
+    &:after
+      content: ""
+      width: 192px
+      height: 120px
+      background: url(../../../img/contur.png) no-repeat
+      position: absolute
+      right: 90px
+      bottom: -125px
+    +respond-to(1216)
+      display: none
   &__ant-img
     display: block
     object-fit: cover
@@ -16,6 +26,10 @@
     color: $dark
   &__wrapper
     margin-top: 155px
+    +respond-to(992)
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
   &__item
     width: 48%
     box-shadow: 0 6px 49px rgba(0, 0, 0, 0.05)
@@ -24,6 +38,20 @@
     position: relative
     padding: 20px
     box-sizing: border-box
+    margin-bottom: 120px
+    +respond-to(1050)
+      margin-bottom: 110px
+      width: 60%
+    +respond-to(917)
+      width: 70%
+    +respond-to(793)
+      width: 80%
+    +respond-to(707)
+      width: 90%
+    +respond-to(635)
+      width: 95%
+    +respond-to(601)
+      width: 100%
   &__info
     margin-top: 20px
   &__title
@@ -37,6 +65,9 @@
     font-family: $museo
     font-size: 16px
     color: $grey
+    +respond-to(480)
+      width: 100%
+      margin-bottom: 30px
   &__list
     position: relative
     &:after
@@ -46,6 +77,8 @@
       position: absolute
       top: 0
       right: 0
+      +respond-to(649)
+        top: -10px
     li
       padding-bottom: 9px
       position: relative
@@ -64,6 +97,9 @@
     color: $dark
     display: inline-block
     margin-left: 35px
+    +respond-to(480)
+      margin-left: 0
+      margin-top: 20px
   &__txt
     font-family: $museo
     font-size: 16px
@@ -73,9 +109,20 @@
     display: inline-block
     float: right
     margin-top: 10px
+    +respond-to(480)
+      margin-top: 20px
+      float: none
+  &__btn-block
+    +respond-to(480)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
 
 
 .fotorama
+  +respond-to(570)
+    height: auto
   &__big
     width: 217px
     height: 153px
@@ -86,6 +133,13 @@
     left: 20px
     top: -77px
     cursor: pointer
+    +respond-to(570)
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+    +respond-to(480)
+      width: 85%
+      height: auto
     img
       width: 100%
       height: auto
@@ -96,13 +150,33 @@
     justify-content: space-between
     width: 50%
     float: right
-    li
+    +respond-to(570)
+      float: none
+      width: 75%
+      margin: 0 auto
+      justify-content: space-around
+      padding-top: 65px
+    +respond-to(480)
+      padding-top: 45%
+      width: 100%
+    +respond-to(423)
+      width: 100%
+    a
       display: inline-block
       width: 79px
       height: 56px
       border-radius: 5px
       overflow: hidden
       cursor: pointer
+      +respond-to(1167)
+        width: 67px
+        height: auto
+      +respond-to(1050)
+        width: 79px
+      +respond-to(480)
+        width: 27%
+      +respond-to(336)
+        width: 67px
       img
         width: 100%
         height: auto
