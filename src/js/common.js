@@ -79,11 +79,11 @@ jQuery(document).ready(function($) {
     });
 
     //fancybox additionary
-    $().fancybox({
-        selector: '.owl-item:not(.cloned) a',
-        loop: true,
-        hash: false
-    });
+    // $().fancybox({
+    //     selector: '.owl-item:not(.cloned) a',
+    //     loop: false,
+    //     hash: false
+    // });
 
     // carts and callback modal
     var callback1 = $('.js-callback1'),
