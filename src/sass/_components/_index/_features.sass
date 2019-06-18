@@ -1,12 +1,11 @@
 .features
   margin-top: 100px
   &__wrapper
-    +respond-to(480)
-      justify-content: center
-      align-items: center
   &__item
     width: 225px
     margin-bottom: 38px
+    +respond-to(480)
+      width: 42vw
   &__img
     display: inline-block
     width: 60px
@@ -16,9 +15,6 @@
     border: 1px solid $grey2
     +respond-to(480)
       position: relative
-      left: 50%
-      transform: translateX(-50%)
-      transform: translateX(-50%)
     img
       width: 100%
       object-fit: cover
@@ -28,4 +24,4 @@
     color: $grey
     margin-top: 20px
     +respond-to(480)
-      text-align: center
+      font-size: 3.5vw
